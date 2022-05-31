@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="index.css" type="text/css" media="screen"/>
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document File</title>
+	</head>
+	<body>
+		<!-- Here a loader is created which
+			loads till response comes -->
+		<div class="d-flex justify-content-center">
+			<div class="spinner-border"
+				role="status" id="loading">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+        <div class="headerTop">
+		<input autocomplete="off" type="search" id="search" placeholder="Search for a file!" />
+		 
+		<div class="pagination">
+			<div id="TableList"></div>
+			<input type="button" id="first" onclick="firtPage()" value="First" />
+			<input type="button" id="previous" onclick="prevPage()" value="❮ Previous" />
+			<input type="button" id="next" onclick="nextPage()" value="Next ❯" />			
+			<input type="button" id="last" onclick="lastPage()" value="Last" />
+			 page: <span id="page"></span>
+		  </div>
+		</div>
+		<!-- table for showing data -->
+		<div><table id="employees" class="table-sortable"></table></div>
+
+		
+
+		<script src="index.js"></script>
+	</body>
+</html>
